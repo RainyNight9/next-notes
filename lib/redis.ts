@@ -4,8 +4,8 @@ const redis = new Redis();
 
 export interface INote {
   title: string;
-  content: string;
   updateTime: string;
+  content?: string;
 }
 
 export interface INotes {
