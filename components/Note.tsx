@@ -1,14 +1,14 @@
 import dayjs from 'dayjs';
 import NotePreview from '@/components/NotePreview'
 import EditButton from '@/components/EditButton'
-import type { INote } from "@/lib/redis";
+import type { INote } from "@/types";
 
-interface Props {
+interface IProps {
   noteId: string;
   note: INote;
 }
 
-export default function Note({ noteId, note }: Props) {
+export default function Note({ noteId, note }: IProps) {
   const { title, content, updateTime } = note
 
   return (

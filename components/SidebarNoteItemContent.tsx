@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useTransition } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 
-interface Props {
+interface IProps {
   id: string;
   title: string;
   children: React.ReactNode;
@@ -16,7 +16,7 @@ export default function SidebarNoteContent({
   title,
   children,
   expandedChildren,
-}: Props) {
+}: IProps) {
   const router = useRouter();
   const pathname = usePathname();
   const selectedId = pathname?.split("/")[1] || null;
