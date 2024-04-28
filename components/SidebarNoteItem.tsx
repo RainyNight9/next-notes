@@ -1,13 +1,13 @@
 import SidebarNoteItemContent from '@/components/SidebarNoteItemContent';
 import SidebarNoteItemHeader from '@/components/SidebarNoteItemHeader';
-import type { INote } from "@/lib/redis";
+import type { INote } from "@/types";
 
-interface Props {
+interface IProps {
   noteId: string;
   note: INote;
 }
 
-export default function SidebarNoteItem({ noteId, note }: Props) {
+export default function SidebarNoteItem({ noteId, note }: IProps) {
 
   const { title, content = '', updateTime } = note;
   return (

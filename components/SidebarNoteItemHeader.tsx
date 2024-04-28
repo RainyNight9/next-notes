@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import type { INote } from "@/lib/redis";
+import type { INote } from "@/types";
 
 export default function SidebarNoteItemHeader({ title, updateTime }: INote) {
   return (

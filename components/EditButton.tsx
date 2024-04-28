@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-interface Props {
+interface IProps {
   noteId: string | null;
   children: React.ReactNode;
 }
 
-export default function EditButton({ noteId, children }: Props) {
+export default function EditButton({ noteId, children }: IProps) {
   const isDraft = noteId == null;
   return (
     <Link href={`/note/edit/${noteId || ""}`} className="link--unstyled">
