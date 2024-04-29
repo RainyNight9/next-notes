@@ -18,6 +18,7 @@
       }
     ],
     "paths": {
+      "@/actions": ["./app/actions.ts"],
       "@/*": ["./*"]
     }
   },
